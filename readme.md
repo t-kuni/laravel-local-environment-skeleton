@@ -34,9 +34,19 @@ hostsに本アプリのドメインを追記する
 docker run --rm -v $PWD/certs:/out -e HOST=local.XXXX.com -e IP=127.0.0.1 tkuni83/self-sign-cert
 ```
 
-## npmやcomposerの実行
+動作確認
 
-以下のコマンドでコンテナのシェルを起動すれば`npm`や`composer`を利用できる
+https://local.XXXX.com
+
+## DBを確認する
+
+http://local.XXXX.com:8080/
+
+
+
+## npmやcomposer, artisanの実行
+
+以下のコマンドでコンテナのシェルを起動すれば`npm`や`composer`, `php`を利用できる
 
 ```
 docker-compose run workspace sh
