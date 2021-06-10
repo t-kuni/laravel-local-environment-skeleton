@@ -1,6 +1,6 @@
-Docker + Laravelのローカル環境の最小構成です
+# Laravel Local Environment Skeleton
 
-Windowsの場合はunisonでファイルを同期します（unisonを使わない場合、画面表示が遅い）
+Docker + Laravelのローカル環境の最小構成のスケルトンです。
 
 
 ## 利用方法
@@ -14,7 +14,7 @@ rm -rf .git
 ```
 
 設定ファイルをコピーして必要に応じて変更する  
-（特に`XXXX`と記載されている部分は環境に合わせて書き換えてください。）
+（プロジェクト全体を検索して`XXXX`と記載されている部分を、環境に合わせて書き換えてください。）
 
 ```
 cp .env.example .env
@@ -50,6 +50,6 @@ composer create-project laravel/laravel .
 
 ## ファイルの同期（Windowsの場合）
 
-Windowsの場合はunisonでファイルを同期します。
+Windowsの場合はunisonでファイルを同期します（unisonを使わない場合、ファイル同期が重く画面表示が遅い）
 
 `sync-files.bat`を起動するとファイルが同期されます。
